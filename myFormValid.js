@@ -1,3 +1,9 @@
+/**
+ * author: donglegend  东胜
+ * @param  {[type]} global  [description]
+ * @param  {[type]} factory [description]
+ * @return {[type]}         [description]
+ */
 ;(function (global, factory){
 
 	'use strict';

@@ -10,9 +10,8 @@
 原生js操控DOM有点繁琐，借助jQuery.
 可直接下载使用，或者习惯 amd，cmd规范的使用模块引入，记得修改 jQuery路径即可。
 
-/**
- * 
- //demo
+/*
+demo
  var elForm = $("form");
 var ops = {
 	data: {
@@ -43,4 +42,4 @@ var ops = {
 	}
 }
 var myForm = elForm.formValid(ops);
- */
+*/
