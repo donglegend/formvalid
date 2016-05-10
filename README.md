@@ -10,9 +10,10 @@
 原生js操控DOM有点繁琐，借助jQuery.
 可直接下载使用，或者习惯 amd，cmd规范的使用模块引入，记得修改 jQuery路径即可。
 
+
+# demo
 ```javascript
-demo
- var elForm = $("form");
+var elForm = $("form");
 var ops = {
 	data: {
 		"name": {
@@ -43,3 +44,15 @@ var ops = {
 }
 var myForm = elForm.formValid(ops);
 ```
+# params说明
+- data是一个 对象，key值就是要验证项的 name属性值
+	* rule: 每一项的验证规则，用正则表示
+	* msg: 如果不符合验证规则，错误提示信息
+- tipType: 错误信息显示方式，内置两种类型: 0 表示 弹框，1 表示 右侧小提示
+		   可以自定义显示，为函数,function (form, el, msg){}
+		   form: 当前表单
+		   el: 当前验证元素
+		   msg: 错误提示信息
+- errorClassName: 验证失败，给当前验证元素添加错误样式class，默认 "invalid"
+- success: 表单验证成功要执行的回调函数
+- error: 表单验证失败要执行的回调函数
